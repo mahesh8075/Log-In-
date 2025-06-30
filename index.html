@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: url(build.jpg) no-repeat center;
+            background-size: cover;
+            height: 100vh;
+        }
+         .container{
+            background-color: white;
+            max-width: 400px;
+            padding: 65px;
+            border-radius: 5px;
+            margin-bottom: 2px;
+            margin-top: 2px;
+
+         }   
+         input{
+            font-size: 22px;
+            border-radius: 5px;
+            padding: 5px;
+         }
+        button{
+            display: block;
+            margin-top: 35px;
+            margin: 20px auto;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #1E7EFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        button:hover{
+            background-color: #3F50FF;
+        }
+        @media (max-width:1250px) {
+            body{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+        <h1 class="heading">Welcome<br> Log  in to continue</h1>
+        <h2 class="heading">Login</h2>
+        <input class="input" type="email" required placeholder="Enter your email address">
+        <h2 class="heading">Password</h2>
+        <input class="password" type="password" required placeholder="Password">
+        <button>Log in</button>
+        </form>
+    </div>
+</body>
+</html>
